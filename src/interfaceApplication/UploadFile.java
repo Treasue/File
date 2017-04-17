@@ -197,6 +197,7 @@ public class UploadFile extends HttpServlet {
 		case "mkv":
 		case "mp4":
 		case "wmv":
+		case "ogg":
 			type = 2;
 			break;
 		//文档
@@ -213,6 +214,12 @@ public class UploadFile extends HttpServlet {
 		case "dwg":
 		case "exe":
 			type = 3;
+			break;
+		//音频
+		case "mp3":
+		case "wav":
+		case "wma":
+			type = 4;
 			break;
 		//其他
 		default:
